@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乡下人产国偷V产偷V自拍 - 沉浸式乡村生活记录与乡村影像分享平台</title>
+    <meta name="description" content="本平台致力于记录真实的乡村生活场景，分享原生态的田园风光与人文影像。内容涵盖乡村风光摄影、农事体验记录及乡村人物生活纪实，旨在呈现最质朴的乡村面貌。">
+    <meta name="keywords" content="乡下人,产国,偷V产偷V自拍,乡村生活,田园风光,原生态摄影">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --primary-light: #e8f5e9;
+            --accent-color: #f9a825;
+            --text-dark: #1b1b1b;
+            --text-gray: #555555;
+            --bg-body: #f4f6f8;
+            --bg-card: #ffffff;
+            --spacing-unit: 1rem;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-header {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 1.2em;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--bg-card);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--text-gray);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/seed/rural_hero/1600/600.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+            margin-bottom: 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: white;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            margin-left: 1rem;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--text-dark);
+        }
+
+        /* Categories Grid */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .category-card {
+            background-color: var(--bg-card);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-light);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .category-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .category-desc {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        /* Featured Content */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .content-card {
+            background-color: var(--bg-card);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .content-card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            color: var(--primary-color);
+            background-color: var(--primary-light);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin: 0.75rem 0;
+            font-weight: 700;
+        }
+
+        .card-meta {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Photo Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 1;
+            overflow: hidden;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 1rem;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: var(--bg-card);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .about-list {
+            margin-top: 1rem;
+        }
+
+        .about-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .about-list li::before {
+            content: '✓';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #263238;
+            color: #eceff1;
+            padding: 3rem 0;
+            margin-top: auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 1.25rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: #b0bec5;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #37474f;
+            color: #78909c;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: var(--bg-card);
+                padding: 1rem;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span>🌾</span> 乡野视界
+            </a>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" class="nav-link active">首页</a></li>
+                    <li><a href="#gallery" class="nav-link">影像图集</a></li>
+                    <li><a href="#features" class="nav-link">乡村特色</a></li>
+                    <li><a href="#about" class="nav-link">关于我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content container">
+                <h1>探寻原生态乡村生活之美</h1>
+                <p>记录真实的农村风貌，分享原汁原味的田园影像与生活点滴</p>
+                <div>
+                    <a href="#gallery" class="btn">浏览影像</a>
+                    <a href="#about" class="btn btn-outline">了解更多</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Categories Section -->
+            <section id="features">
+                <div class="section-header">
+                    <h2 class="section-title">内容分类</h2>
+                    <a href="#" class="nav-link" style="font-size: 0.9rem;">查看全部 &rarr;</a>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <span class="category-icon">🏡</span>
+                        <h3 class="category-title">乡村民居</h3>
+                        <p class="category-desc">传统土坯房与现代农舍的建筑风格与居住环境展示</p>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">👨‍🌾</span>
+                        <h3 class="category-title">农事劳作</h3>
+                        <p class="category-desc">春耕夏耘秋收冬藏，记录田间地头的真实劳作场景</p>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🦆</span>
+                        <h3 class="category-title">家禽家畜</h3>
+                        <p class="category-desc">散养家禽与耕牛的生活状态，展现生态养殖环境</p>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🍲</span>
+                        <h3 class="category-title">乡村美食</h3>
+                        <p class="category-desc">自家种植的蔬菜瓜果，以及地道的农家饭菜制作</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Content -->
+            <section id="gallery">
+                <div class="section-header">
+                    <h2 class="section-title">精选影像</h2>
+                </div>
+                <div class="featured-grid">
+                    <article class="content-card">
+                        <img src="https://picsum.photos/seed/farm1/400/250" alt="田野风光" class="card-image">
+                        <div class="card-body">
+                            <span class="card-tag">风景</span>
+                            <h3 class="card-title">金秋时节的稻田风光</h3>
+                            <div class="card-meta">
+                                <span>发布于 2023-10-15</span>
+                                <span>👁 1.2k</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="content-card">
+                        <img src="https://picsum.photos/seed/farmer2/400/250" alt="农人劳作" class="card-image">
+                        <div class="card-body">
+                            <span class="card-tag">纪实</span>
+                            <h3 class="card-title">老农在田间的劳作瞬间</h3>
+                            <div class="card-meta">
+                                <span>发布于 2023-10-12</span>
+                                <span>👁 856</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="content-card">
+                        <img src="https://picsum.photos/seed/cottage3/400/250" alt="农家小院" class="card-image">
+                        <div class="card-body">
+                            <span class="card-tag">生活</span>
+                            <h3 class="card-title">宁静的农家小院生活</h3>
+                            <div class="card-meta">
+                                <span>发布于 2023-10-10</span>
+                                <span>👁 2.1k</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Image Grid -->
+            <section>
+                <div class="section-header">
+                    <h2 class="section-title">生活图集</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/seed1/300/300" alt="乡村风景">
+                        <div class="gallery-overlay">山间小路</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/seed2/300/300" alt="乡村风景">
+                        <div class="gallery-overlay">溪边垂钓</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/seed3/300/300" alt="乡村风景">
+                        <div class="gallery-overlay">果园采摘</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/seed4/300/300" alt="乡村风景">
+                        <div class="gallery-overlay">老牛耕地</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/seed5/300/300" alt="乡村风景">
+                        <div class="gallery-overlay">村口古树</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/seed6/300/300" alt="乡村风景">
+                        <div class="gallery-overlay">农家腊肉</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/seed7/300/300" alt="乡村风景">
+                        <div class="gallery-overlay">收获玉米</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/seed8/300/300" alt="乡村风景">
+                        <div class="gallery-overlay">土灶做饭</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about-section">
+                <div class="about-image">
+                    <img src="https://picsum.photos/seed/village_about/600/400" alt="乡村全景">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title" style="margin-bottom: 1rem;">关于我们</h2>
+                    <p style="margin-bottom: 1rem; color: var(--text-gray);">
+                        我们是一个专注于乡村生活记录与分享的在线平台。旨在通过镜头捕捉那些被城市遗忘的角落，还原最质朴、最真实的农村面貌。
+                    </p>
+                    <p style="margin-bottom: 1rem; color: var(--text-gray);">
+                        在这里，你可以看到传统的农耕方式、原生态的饮食文化以及淳朴的乡邻关系。我们相信，每一片土地都有其独特的语言，每一个乡村故事都值得被倾听。
+                    </p>
+                    <ul class="about-list">
+                        <li>真实记录，拒绝摆拍</li>
+                        <li>覆盖全国多个特色乡村</li>
+                        <li>高清画质，沉浸式体验</li>
+                        <li>弘扬传统农耕文化</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>乡野视界</h4>
+                    <p style="color: #b0bec5; font-size: 0.9rem;">致力于展示中国乡村的真实风貌，让更多人了解和关注农村生活。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">网站首页</a></li>
+                        <li><a href="#">影像图集</a></li>
+                        <li><a href="#">乡村故事</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>友情链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">三农资讯网</a></li>
+                        <li><a href="#">农业技术交流</a></li>
+                        <li><a href="#">乡村旅游指南</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 乡野视界乡村影像分享平台. 保留所有权利.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Close menu when clicking a link (mobile UX)
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById('navMenu');
+                if (menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
