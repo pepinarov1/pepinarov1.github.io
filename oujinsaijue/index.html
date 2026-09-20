@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="欧锦赛决赛全方位指南：赛事前瞻、历史回顾、冠军球队分析及决赛前瞻资讯。">
+    <meta name="keywords" content="欧锦赛决赛, 欧洲杯决赛, 欧洲足球锦标赛, 足球赛事">
+    <title>欧锦赛决赛-全球顶级足球盛宴与冠军争夺战指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary: #008037; /* 德国绿 */
+            --primary-dark: #005f2e;
+            --secondary: #f0f0f0;
+            --text-main: #1a1a1a;
+            --text-light: #666666;
+            --accent: #ffd700; /* 金色点缀 */
+            --bg-body: #f8f9fa;
+            --bg-card: #ffffff;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 顶部导航 */
+        header {
+            background-color: var(--bg-card);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-main);
+        }
+
+        nav a.active {
+            color: var(--primary);
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, rgba(0, 128, 55, 0.9), rgba(0, 95, 46, 0.95)), url('https://picsum.photos/seed/soccerfield/1600/900') center/cover no-repeat;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* 统计数据条 */
+        .stats-bar {
+            background: white;
+            padding: 2rem 0;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* 主体内容 */
+        main {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 1rem;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+        }
+
+        /* 赛事信息网格 */
+        .match-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .match-card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .match-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .match-banner {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .match-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .match-content {
+            padding: 1.5rem;
+        }
+
+        .match-time {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .match-teams {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+
+        .team-logo {
+            width: 48px;
+            height: 48px;
+            background: #eee;
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .team-name {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .vs {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin: 0 0.5rem;
+        }
+
+        .match-desc {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .match-footer {
+            border-top: 1px solid var(--secondary);
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* 历史冠军 */
+        .history-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            margin-bottom: 4rem;
+        }
+
+        .history-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .history-item {
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid var(--secondary);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .history-item.winner {
+            border-color: var(--primary);
+            background: rgba(0, 128, 55, 0.03);
+        }
+
+        .history-year {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .history-item.winner .history-year {
+            color: var(--primary);
+        }
+
+        .history-country {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .trophy-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* FAQ */
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .faq-question:hover {
+            background-color: #fafafa;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            padding-bottom: 1.5rem;
+            max-height: 500px; /* 近似值 */
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* 页脚 */
+        footer {
+            background: #1a1a1a;
+            color: #888;
+            padding: 4rem 0 2rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+                gap: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+
+            .match-teams {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .vs {
+                transform: rotate(90deg);
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                ⚽ 欧锦赛<span>决赛指南</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">赛事前瞻</a></li>
+                    <li><a href="#">历史回顾</a></li>
+                    <li><a href="#">球队分析</a></li>
+                    <li><a href="#">赛程表</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn btn-outline">订阅提醒</button>
+                <button class="btn btn-primary">观看直播</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>欧锦赛决赛</h1>
+            <p>见证欧洲足坛最高荣誉的诞生。全面解析冠军争夺战，历史数据与球队深度分析。</p>
+            <div class="hero-meta">
+                <div class="meta-item">📅 2024年7月14日</div>
+                <div class="meta-item">🏟️ 慕尼黑安联球场</div>
+                <div class="meta-item">📺 全球直播</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="stats-bar">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>16</h3>
+                    <p>参赛国家</p>
+                </div>
+                <div class="stat-item">
+                    <h3>51</h3>
+                    <p>历史决赛次数</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24</h3>
+                    <p>总进球数(预测)</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3</h3>
+                    <p>加时/点球场次</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        
+        <!-- 赛事前瞻 -->
+        <section id="preview">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2>赛事前瞻与焦点</h2>
+                    <p>决战之夜的关键看点与战术分析</p>
+                </div>
+                <a href="#" style="color: var(--primary); font-weight: 600;">查看完整赛程 &rarr;</a>
+            </div>
+
+            <div class="match-grid">
+                <article class="match-card">
+                    <div class="match-banner" style="background-image: url('https://picsum.photos/seed/soccer1/400/200');">
+                        <span class="match-tag">决赛</span>
+                    </div>
+                    <div class="match-content">
+                        <span class="match-time">07月14日 03:00</span>
+                        <div class="match-teams">
+                            <div class="team">
+                                <div class="team-logo">🇩🇪</div>
+                                <span class="team-name">德国队</span>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="team">
+                                <div class="team-logo">🇫🇷</div>
+                                <span class="team-name">法国队</span>
+                            </div>
+                        </div>
+                        <p class="match-desc">两支传统豪强在决赛相遇，德国队坐镇主场，能否在球迷面前加冕欧洲之王？</p>
+                        <div class="match-footer">
+                            <span>📊 历史交锋 5:5</span>
+                            <span>🔥 热度 98%</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="match-card">
+                    <div class="match-banner" style="background-image: url('https://picsum.photos/seed/soccer2/400/200');">
+                        <span class="match-tag">半决赛回顾</span>
+                    </div>
+                    <div class="match-content">
+                        <span class="match-time">07月10日 02:00</span>
+                        <div class="match-teams">
+                            <div class="team">
+                                <div class="team-logo">🇦🇹</div>
+                                <span class="team-name">奥地利队</span>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="team">
+                                <div class="team-logo">🇳🇱</div>
+                                <span class="team-name">荷兰队</span>
+                            </div>
+                        </div>
+                        <p class="match-desc">奥地利队凭借严密的防守和高效的反击淘汰了强大的橙衣军团，震惊欧洲。</p>
+                        <div class="match-footer">
+                            <span>⚽ 进球: 1-2</span>
+                            <span>🏆 4强席位</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="match-card">
+                    <div class="match-banner" style="background-image: url('https://picsum.photos/seed/soccer3/400/200');">
+                        <span class="match-tag">半决赛回顾</span>
+                    </div>
+                    <div class="match-content">
+                        <span class="match-time">07月07日 02:00</span>
+                        <div class="match-teams">
+                            <div class="team">
+                                <div class="team-logo">🇪🇸</div>
+                                <span class="team-name">西班牙队</span>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="team">
+                                <div class="team-logo">🇨🇿</div>
+                                <span class="team-name">捷克队</span>
+                            </div>
+                        </div>
+                        <p class="match-desc">斗牛士军团传控依旧犀利，以一场4-0的屠杀展现统治力，挺进决赛。</p>
+                        <div class="match-footer">
+                            <span>⚽ 进球: 4-0</span>
+                            <span>🎯 控球率 72%</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 历史回顾 -->
+        <section id="history">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2>历史冠军荣耀</h2>
+                    <p>历届欧锦赛决赛冠军名单与经典时刻</p>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <div class="history-list">
+                    <div class="history-item">
+                        <span class="trophy-icon">🏆</span>
+                        <div class="history-year">2020</div>
+                        <div class="history-country">意大利</div>
+                    </div>
+                    <div class="history-item">
+                        <span class="trophy-icon">🥈</span>
+                        <div class="history-year">2016</div>
+                        <div class="history-country">葡萄牙</div>
+                    </div>
+                    <div class="history-item">
+                        <span class="trophy-icon">🥉</span>
+                        <div class="history-year">2012</div>
+                        <div class="history-country">西班牙</div>
+                    </div>
+                    <div class="history-item">
+                        <span class="trophy-icon">🥈</span>
+                        <div class="history-year">2008</div>
+                        <div class="history-country">西班牙</div>
+                    </div>
+                    <div class="history-item">
+                        <span class="trophy-icon">🥇</span>
+                        <div class="history-year">2004</div>
+                        <div class="history-country">希腊</div>
+                    </div>
+                    <div class="history-item">
+                        <span class="trophy-icon">🥉</span>
+                        <div class="history-year">2000</div>
+                        <div class="history-country">法国</div>
+                    </div>
+                    <div class="history-item">
+                        <span class="trophy-icon">🥇</span>
+                        <div class="history-year">1996</div>
+                        <div class="history-country">德国</div>
+                    </div>
+                    <div class="history-item">
+                        <span class="trophy-icon">🥉</span>
+                        <div class="history-year">1992</div>
+                        <div class="history-country">丹麦</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section id="faq" class="faq-section">
+            <div class="section-title" style="text-align: center;">
+                <h2>观赛指南与常见问题</h2>
+                <p>关于欧锦赛决赛你需要知道的一切</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>欧锦赛决赛一般在什么时候举行？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>欧洲足球锦标赛决赛通常在欧锦赛开赛后的一个月左右举行，通常在当地时间周日晚间或周二晚间进行，以确保全球观众都能观看。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>决赛进球数通常是多少？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>自1980年扩军以来，欧锦赛决赛的进球数相对较低，大部分决赛以1:0或2:1结束，但也有2:2平局后通过点球大战决胜负的情况。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>如何观看欧锦赛决赛的直播？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>欧锦赛决赛通常由UEFA官方授权的全球多家电视台进行转播。在中国，咪咕视频、爱奇艺体育等平台通常拥有独家转播权。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>决赛前的抽签仪式是什么时候？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>欧锦赛决赛前的抽签仪式通常在决赛前一周举行，用于决定下一届欧锦赛的小组赛分组情况。</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于赛事</h4>
+                    <ul>
+                        <li><a href="#">赛事介绍</a></li>
+                        <li><a href="#">参赛球队</a></li>
+                        <li><a href="#">赛制规则</a></li>
+                        <li><a href="#">历届回顾</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>观赛指南</h4>
+                    <ul>
+                        <li><a href="#">直播平台</a></li>
+                        <li><a href="#">赛程时间表</a></li>
+                        <li><a href="#">比分预测</a></li>
+                        <li><a href="#">周边资讯</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">广告合作</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>订阅更新</h4>
+                    <p style="margin-bottom: 1rem;">获取最新的欧锦赛决赛资讯与球队动态。</p>
+                    <input type="email" placeholder="您的邮箱地址" style="padding: 0.5rem; width: 100%; border: none; border-radius: 4px; margin-bottom: 0.5rem;">
+                    <button class="btn btn-primary" style="width: 100%;">订阅</button>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 欧锦赛决赛指南网. All Rights Reserved. 本站内容仅供资讯参考，非官方数据来源。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的 FAQ 手风琴交互
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                          </html>
