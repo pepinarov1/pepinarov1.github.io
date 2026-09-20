@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>疫情开始的时间 - 新冠肺炎爆发背景与全球疫情时间线详解</title>
+    <meta name="description" content="详细梳理疫情开始的时间节点，解析2019年末至2020年初的疫情爆发背景、关键时间线及全球疫情发展历程。">
+    <meta name="keywords" content="疫情开始的时间, 新冠肺炎爆发时间, 2019冠状病毒病, 全球疫情时间线, 2020年疫情起源">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-radius: 8px;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+            height: 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-meta {
+            display: inline-flex;
+            gap: 1rem;
+            background: rgba(255,255,255,0.15);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 3rem 1rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        /* Content Area */
+        .content-area {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+            color: var(--primary-color);
+        }
+
+        .intro-text {
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 3px solid #e0e0e0;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.65rem;
+            top: 0.25rem;
+            width: 1rem;
+            height: 1rem;
+            background: var(--accent-color);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px var(--accent-color);
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+
+        .timeline-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .sidebar-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        .sidebar-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 0.5rem;
+            background: #f1f3f5;
+            border-radius: 6px;
+        }
+
+        .stat-num {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .info-list li {
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .info-list li::before {
+            content: '•';
+            color: var(--accent-color);
+            margin-right: 0.5rem;
+            font-weight: bold;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-top: 3rem;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 1rem;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .faq-question {
+            padding: 1rem 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            transition: background 0.2s;
+        }
+
+        .faq-question:hover {
+            background: #f9f9f9;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background: #fafafa;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 1rem 1.5rem 1.5rem;
+            max-height: 500px; /* Arbitrary large height */
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-item.active .faq-question::before {
+            content: '+';
+        }
+
+        .faq-question::before, .faq-question::after {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col a {
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            color: #7f8c8d;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+            }
+            nav ul {
+                margin-top: 1rem;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">疫情<span>时间线</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#overview" class="active">时间概览</a></li>
+                    <li><a href="#timeline">关键节点</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>疫情开始的时间</h1>
+        <p>深入解析2019年末至2020年初全球公共卫生事件的爆发背景、关键时间节点及后续发展脉络。</p>
+        <div class="hero-meta">
+            <span>起源地：中国武汉</span>
+            <span>病毒名称：SARS-CoV-2</span>
+            <span>疾病名称：COVID-19</span>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Main Content -->
+        <main class="content-area">
+            <article>
+                <h2 class="section-title">疫情爆发背景</h2>
+                <div class="intro-text">
+                    <p>关于“疫情开始的时间”，通常指的是2019年末在中国湖北省武汉市首次报告的聚集性肺炎病例。根据世界卫生组织（WHO）及相关卫生机构的调查报告，这种新型病毒（SARS-CoV-2）并非在2020年1月突然出现，而是可能在更早的时期就已经在人类中传播，并经历了从局部传播到形成规模性疫情的演变过程。</p>
+                    <p>疫情的开始并非单一时刻，而是一个渐进的过程。从最早的病例报告、病毒的基因测序，到全球卫生组织发出预警，这一系列事件构成了疫情起始的时间轴。理解这一时间点对于掌握疫情传播规律、制定防控策略以及追溯病毒源头具有重要意义。</p>
+                </div>
+
+                <h2 class="section-title">关键时间节点</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">2019年12月</span>
+                        <h3 class="timeline-title">早期病例报告</h3>
+                        <p class="timeline-content">武汉市卫生健康委员会陆续接到不明原因肺炎病例的报告。这是疫情开始时间的重要依据，标志着该疾病进入公共卫生监测视野。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">2019年12月31日</span>
+                        <h3 class="timeline-title">官方通报</h3>
+                        <p class="timeline-content">中国向世界卫生组织通报了武汉市出现的不明原因肺炎病例，并开始对相关情况进行调查。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">2020年1月7日</span>
+                        <h3 class="timeline-title">病毒发现</h3>
+                        <p class="timeline-content">中国科研团队成功分离出病毒毒株，并初步鉴定为一种新型冠状病毒。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">2020年1月12日</span>
+                        <h3 class="timeline-title">基因序列共享</h3>
+                        <p class="timeline-content">中国向全球流感共享数据库（GISAID）分享了病毒的全基因组序列，为全球科研机构开展检测和疫苗研发提供了基础。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">2020年1月30日</span>
+                        <h3 class="timeline-title">国际关注</h3>
+                        <p class="timeline-content">世界卫生组织宣布新型冠状病毒疫情构成“国际关注的突发公共卫生事件”（PHEIC）。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">2020年3月11日</span>
+                        <h3 class="timeline-title">大流行宣告</h3>
+                        <p class="timeline-content">世界卫生组织总干事宣布新冠肺炎疫情具有大流行特征，标志着疫情开始在全球范围内广泛扩散。</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h2 class="section-title">常见问题解答</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">疫情确切开始于哪一天？</div>
+                        <div class="faq-answer">
+                            <p>医学上难以划定一个确切的“开始日期”。2019年12月是武汉首次报告病例的时间，也是疫情开始进入公共卫生监测的时间点。但病毒可能在更早的12月初甚至更早就已经在局部人群中传播，只是尚未引起足够的重视。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">为什么现在说疫情开始于2019年底？</div>
+                        <div class="faq-answer">
+                            <p>因为2019年12月出现了首批有记录的可追溯病例，且病毒基因测序显示该病毒与当时流行的其他冠状病毒不同。这标志着该特定疫情事件的正式启动，而非2020年1月突然出现。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">病毒最早是从哪里来的？</div>
+                        <div class="faq-answer">
+                            <p>目前科学界仍在持续研究中。现有的流行病学证据显示，病毒极有可能起源于蝙蝠，并通过某种中间宿主传播给人类。关于具体的中间宿主和传播途径，全球科研团队仍在进行深入溯源工作。</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <!-- Sidebar -->
+        <aside>
+            <div class="sidebar-card">
+                <h3>疫情核心数据</h3>
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <span class="stat-num">2019</span>
+                        <span class="stat-label">报告起始年</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">SARS-CoV-2</span>
+                        <span class="stat-label">病毒名称</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">COVID-19</span>
+                        <span class="stat-label">疾病名称</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">武汉</span>
+                        <span class="stat-label">首发城市</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>相关背景</h3>
+                <ul class="info-list">
+                    <li><strong>病毒特性：</strong> 通过飞沫和接触传播，具有潜伏期长、传染性强的特点。</li>
+                    <li><strong>防控措施：</strong> 全球范围内采取了包括封锁、社交距离、口罩佩戴和疫苗接种在内的综合措施。</li>
+                    <li><strong>全球影响：</strong> 对全球经济、交通运输、教育体系以及人们的日常生活产生了深远影响。</li>
+                    <li><strong>持续监测：</strong> 病毒仍在不断变异，各国公共卫生机构持续监测疫情动态。</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>疫情时间线</h4>
+                <p style="font-size: 0.9rem; color: #bdc3c7; line-height: 1.6;">
+                    致力于提供准确、客观的疫情历史资料与时间线梳理，帮助公众了解全球公共卫生事件的发展脉络。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#overview">疫情概览</a></li>
+                    <li><a href="#timeline">详细时间线</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>参考来源</h4>
+                <ul>
+                    <li><a href="#">世界卫生组织 (WHO)</a></li>
+                    <li><a href="#">中国疾控中心</a></li>
+                    <li><a href="#">全球流感共享数据库 (GISAID)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 疫情时间线整理. 本页面内容仅供历史参考与科普使用.
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
